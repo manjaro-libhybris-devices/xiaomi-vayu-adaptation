@@ -1,0 +1,9 @@
+[Unit]
+Description=xiaomi vayu adaptation service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xiaomi-vayu-adaptation
+
+[Install]
+WantedBy=default.target
