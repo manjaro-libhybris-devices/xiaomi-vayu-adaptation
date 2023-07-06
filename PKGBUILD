@@ -43,9 +43,6 @@ package() {
     install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/dtbo.img" -t "${pkgdir}/boot/"
     install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/vbmeta.img" -t "${pkgdir}/boot/"
 
-    mkdir -p "${pkgdir}/usr/lib/systemd/system/bluebinder.service.d/"
-    install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/10-after.conf" "${pkgdir}/usr/lib/systemd/system/bluebinder.service.d"
-
     mkdir -p "${pkgdir}/var/lib/bluetooth/"
     install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/board-address" -t "${pkgdir}/var/lib/bluetooth/"
 
