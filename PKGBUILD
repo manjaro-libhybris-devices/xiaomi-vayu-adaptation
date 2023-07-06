@@ -7,11 +7,11 @@ pkgver=1$(date +%y%m%d)
 pkgrel=1
 pkgdesc="Manjaro libhybris adaptation for xiaomi vayu"
 arch=('any')
-url="https://github.com/armgham/xiaomi-vayu-adaptation"
+url="https://github.com/manjaro-libhybris-devices/xiaomi-vayu-adaptation"
 license=('GPL')
 depends=('gzip' 'glibc-locales' 'wget' 'systemd')
 makedepends=('git')
-source=("xiaomi-vayu-adaptation::git+https://github.com/armgham/xiaomi-vayu-adaptation.git")
+source=("xiaomi-vayu-adaptation::git+https://github.com/manjaro-libhybris-devices/xiaomi-vayu-adaptation.git")
 install=$pkgname.install
 md5sums=('SKIP')
 
