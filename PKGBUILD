@@ -29,6 +29,9 @@ package() {
 
     cp -r "${srcdir}/xiaomi-vayu-adaptation/droid-vendor-overlay" -t "${pkgdir}/usr/lib/"
 
+    mkdir -p "${pkgdir}/usr/lib/manjaro-libhybris/"
+    touch "${pkgdir}/usr/lib/manjaro-libhybris/no-udev"
+
     mkdir -p ${pkgdir}/etc/phosh/
     install -Dm644 "${srcdir}/xiaomi-vayu-adaptation/phoc.ini" -t "${pkgdir}/etc/phosh/"
 
